@@ -1,0 +1,112 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    int size,s,i,si;
+    cout<<"enter the size of 2D array : ";
+    cin>>size>>s>>si;
+    
+     // Validate input size
+    if (size <= 0) {
+        cout << "Invalid array size." << endl;
+        return 1;
+    }
+     // Validate input size
+    if (size <= 0) {
+        cout << "Invalid array size." << endl;
+        return 1;
+    }  
+    // Validate input size
+    if (size <= 0) {
+        cout << "Invalid array size." << endl;
+        return 1;
+    }
+
+    // Allocate memory dynamically
+    int* arr = new int[size];
+    int* arr1 =new int[s];
+    int* arr2 =new int[si];
+
+    // Get array elements from user
+    cout << "Enter " << size << " integers:" << endl;
+    for (int i = 0; i < size; i++) {
+        cout << "Element " << i + 1 << ": ";
+        cin >> arr[i];
+    }
+    
+    // second array
+    cout<<"enter"<<s<<" integers:"<<endl;
+    for(i=0; i<s; i++){
+        cout<< "element"<<i+1<<": ";
+        cin>>  arr1[i];
+    }
+    //third array
+    cout<<"enter"<<si<<"integers :"<<endl;
+    for(i= 0; i<si; i++){
+        cout<<"elements"<<i+1<<": ";
+        cin>> arr2[i];
+    }
+
+   // Create an array of pointers to hold the existing arrays
+    int* matrix[3]; 
+
+    // Point them directly to your existing arrays (Zero copying required!)
+    matrix[0] = arr; 
+    matrix[1] = arr1;
+    matrix[2] =arr2;
+
+    // Display as 2D array
+    cout << "\n\n2D Array:\n";
+    for(int i = 0; i < size; i++) {
+        cout << matrix[0][i] << " ";
+    }
+    cout << endl;
+
+    for(int i = 0; i < s; i++) {
+        cout << matrix[1][i] << " ";
+    }
+    cout << endl;
+    
+    for(i=0; i<si; i++){
+        cout<< matrix[2][i]<<" ";
+    }
+cout<< endl;
+
+int least= matrix[0][0];
+// we will check row wise
+for(i=0; i<size; i++){
+    if(matrix[0][i] < least)
+        least = matrix[0][i];
+}
+for(i=0; i<s; i++){
+    if(matrix[1][i] < least)
+        least = matrix[1][i];
+}
+for(i=0; i<si; i++){
+    if(matrix[2][i] < least)
+        least = matrix[2][i];
+}
+cout<<"smallest number is : "<<least<<endl;
+
+int max= matrix[0][0];
+// we will check row wise
+for(i=0; i<size; i++){
+    if(matrix[0][i] > max)
+        max = matrix[0][i];
+}
+for(i=0; i<s; i++){
+    if(matrix[1][i] > max)
+        max = matrix[1][i];
+}
+for(i=0; i<si; i++){
+    if(matrix[2][i] > max)
+        max = matrix[2][i];
+}
+cout<<"largest number is : "<<max;
+// Free memory
+    delete[] arr;
+    delete[] arr1;
+    delete[] arr2;
+ return 0;
+}
+    
