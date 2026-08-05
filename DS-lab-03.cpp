@@ -12,12 +12,12 @@ int main() {
         return 1;
     }
      // Validate input size
-    if (size <= 0) {
+    if (s <= 0) {
         cout << "Invalid array size." << endl;
         return 1;
     }  
     // Validate input size
-    if (size <= 0) {
+    if (si <= 0) {
         cout << "Invalid array size." << endl;
         return 1;
     }
