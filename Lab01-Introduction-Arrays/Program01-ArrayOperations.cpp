@@ -23,24 +23,40 @@ class arr{
         cin >> pos;
 
         for (i = pos - 1; i < 4; i++) {
-            arr[i] = arr[i + 1];
+            ar[i] = ar[i + 1];
         }
 
         cout << "After deletion: ";
 
         for (i = 0; i < 4; i++) {
-            cout << arr[i] << " ";
+            cout << ar[i] << " ";
         }
 
         cout << endl;
     }
+         void search() {
+        int value;
+        cout << "Enter value to search: ";
+        cin >> value;
 
-}
+        for (int i = 0; i < 5; i++) {
+            if (ar[i] == value) {
+                cout << "Element found at position " << i << endl;
+                return;
+            }
+        }
+
+        cout << "Element not found\n";
+    }
+
+};
 int main(){
     arr s;
     s.insert();
     s.deleteElement();
     s.display();
-    return 0;}
+    s.search();
+    return 0;
+    }
 
 
