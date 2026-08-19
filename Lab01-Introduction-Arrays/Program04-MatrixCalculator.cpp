@@ -1,3 +1,4 @@
+// using swich case
 #include <iostream>
 using namespace std;
 
