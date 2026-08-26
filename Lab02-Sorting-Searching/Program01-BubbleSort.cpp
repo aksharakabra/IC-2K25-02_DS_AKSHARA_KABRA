@@ -1,4 +1,4 @@
-//Bubble Sort
+//Bubble Sort program 
 #include <iostream>
 using namespace std;
 
