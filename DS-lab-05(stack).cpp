@@ -47,6 +47,16 @@ class myStack{
         }  
         return arr[top];
     }
+    // display
+void display(){
+    if (isempty()){
+            cout<<"underflow stack\n";
+            return;
+        }
+else
+        {cout<<"\nthe stack is: ";
+    for(int i=0; i<=top; i++){
+        cout<<arr[i]<<endl;}}}
 };
 
     int main(){
@@ -54,10 +64,13 @@ class myStack{
         s.push(23);
         s.push(25);
         s.push(24);
+        s.push(26);
+        s.push(66);;
         cout<<s.pop()<<endl;
         cout<<s.peek()<<endl;
         cout<<(s.isempty()? "yes": "no")<<endl;
         cout<<(s.isfull()? "yes": "no");
+        s.display();
         return 0;
 
 }
