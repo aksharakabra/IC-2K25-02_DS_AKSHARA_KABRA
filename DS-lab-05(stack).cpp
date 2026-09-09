@@ -72,5 +72,5 @@ else
         cout<<(s.isfull()? "yes": "no");
         s.display();
         return 0;
-
+delete int[capacity];
 }
