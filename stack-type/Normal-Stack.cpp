@@ -1,4 +1,4 @@
-// stack
+// dynamic stack
 #include <iostream>
 using namespace std;
 class myStack{
@@ -12,14 +12,20 @@ class myStack{
         arr= new int[capacity];
         top= -1;
     }
-    // empty and full functions
-    bool isempty(){
-        return top == -1;
-        cout<<"stack is empty";
+    
+    bool isempty() {
+    if (top == -1) {
+        cout << "stack is empty\n";
+        return true;
     }
+    return false;
+}
     bool isfull(){
-        return top == capacity - 1;
-         cout<<"stack is full\n";
+        if (top == capacity-1) {
+        cout << "stack is full\n";
+        return true;
+    }
+    return false;
     }
     // push then pop
     void push(int x){
@@ -36,7 +42,7 @@ class myStack{
             cout<<"underflow stack\n";
             return -1;
         }
-        cout<<"we pulled a number ";
+        cout<<"we pulled a number \n";
         return arr[top--];
     }
 
@@ -46,7 +52,7 @@ class myStack{
             cout<<"underflow stack\n";
             return -1;
         }  
-        cout<<"the top is ";
+        cout<<"the top is \n";
         return arr[top];
     }
     // display
@@ -59,8 +65,11 @@ else
         {cout<<"\nthe stack is: ";
     for(int i=0; i<=top; i++){
         cout<<arr[i]<<endl;}}}
+    // destructor
+~myStack(){
+    delete[] arr;
+}
 };
-
     int main(){
         myStack s(4);
         s.push(23);
@@ -70,10 +79,8 @@ else
         s.push(26);
         s.push(66);
         cout<<s.peek()<<endl;
-        cout<<(s.isempty()? "yes": "no")<<endl;
-        cout<<(s.isfull()? "yes": "no");
+        cout<<(s.isempty()? "yes":"no")<<endl;
+        s.isfull();
         s.display();
         return 0;
-        return 0;
-
 }
