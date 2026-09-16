@@ -59,6 +59,10 @@ else
         {cout<<"\nthe stack is: ";
     for(int i=0; i<=s[0]; i++){
         cout<<arr[i]<<endl;}}}
+// destructor
+~stacky(){
+    delete[] arr;
+}
 };
 
     int main(){
