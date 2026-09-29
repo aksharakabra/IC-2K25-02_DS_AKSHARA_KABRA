@@ -6,8 +6,8 @@ According to DR SHALIGRAM PRAJAPAT sir, <br>
 A/S/c/K/N/D<br>
 arrival distribution/service time distribution/number of server/capacity of queue/size of calling population/queueing pattern(LIFO, FIFO)<br>
 <h2>Operations</h2>
-<pre><b>enqueue</b>
-  for fixed front 
+<b>ENQUEUE</b>
+  <pre>for fixed front 
   Step 1: Start
 Step 2: Check for Overflow. 
         If (rear == capacity - 1), then print "Overflow" and exit.
