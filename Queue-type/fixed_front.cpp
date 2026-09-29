@@ -1,12 +1,12 @@
 // fixed front queue that is simple
 #include <iostream>
 using namespace std;
-class cir_queue{
+class queue{
     private:
     int* arr;
     int front, rear, capacity;
     public:
-    cir_queue(int cap){
+    queue(int cap){
         capacity= cap;
         arr= new int[capacity];
         front =0;
@@ -59,12 +59,12 @@ class cir_queue{
         cout << endl;
     }
 
-    ~cir_queue() {
+    ~queue() {
         delete[] arr;
     }
 };
 int main(){
-    cir_queue q(4);
+    queue q(4);
     q.enqueue(21);
     q.enqueue(22);
     q.enqueue(31);
