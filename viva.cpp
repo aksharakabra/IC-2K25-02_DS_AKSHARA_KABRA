@@ -1,4 +1,4 @@
-//  second que
+//  second que- create a stack with size m and put the element in array ab cd e and find the peek element
 #include <iostream>
 using namespace std;
 class stacky{
