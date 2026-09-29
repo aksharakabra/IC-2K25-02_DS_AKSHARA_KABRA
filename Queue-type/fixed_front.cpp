@@ -30,7 +30,7 @@ class queue{
     }
     bool empty(){
         if(rear==-1){
-            cout<<"queue is enmpty"<<endl;
+            cout<<"queue is empty"<<endl;
             return true;
         }
         return false;
