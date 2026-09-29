@@ -1,4 +1,4 @@
-// basic dynmic queue
+// basic dynmic queue but its not the simple one
 #include<iostream>
 using namespace std;
 
@@ -80,7 +80,8 @@ int main() {
 
     q.display();         // 10 20 30
     cout << q.frontele() << "\n";  // 10
-
+    q.isFull();
+    q.isEmpty();
     q.dequeue();
     q.display();         // 20 30
 
