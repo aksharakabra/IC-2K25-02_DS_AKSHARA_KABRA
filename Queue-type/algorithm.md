@@ -1,3 +1,5 @@
+The following is for the exam only.<br> 
+To understand and revise just look for the README.md file<br>
 <h2>Operations</h2>
 <b>ENQUEUE</b>
   <pre>for fixed front 
