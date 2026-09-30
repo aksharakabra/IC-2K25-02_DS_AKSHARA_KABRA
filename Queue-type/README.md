@@ -11,6 +11,7 @@ Initialization(constructor)..front=0 and rear=-1
 IsEMPTY...rear==-1 or front==-1(for non fixed front)
 IsFull...rear==max-1
 push...arr[++rear]=x
-pop...loop for(int i=front+1; i<=rear;i++){arr[i-1]=arr[i]} and r-- or front++ (for fixed front) 
-display(by loop)... for(int i=0; i<=top1; i++){arr[i]}
+pop(loop first)... for(int i=front+1; i<=rear;i++){arr[i-1]=arr[i]} and r-- or front++ (for fixed front) 
+peek front...arr[front]
+display(by loop)...   for (int i = front; i <= rear; i++) {arr[i]}
 </pre>
