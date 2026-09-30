@@ -1,10 +1,3 @@
-<h2>Definition</h2><br>
-According to DR SHALIGRAM PRAJAPAT sir, <br>
-<i> A Queue is the organisation of data items in majorly FIFO manner, where elements are inserted in one end known as REAR (tail) and removed from another end called FRONT (head).</i><br>
-<b> QUEUE is therefore used to store data that needs to be processed in the order of its arrival</b>.<br>
-<h2>Kendall's notation</h2><br>
-A/S/c/K/N/D<br>
-arrival distribution/service time distribution/number of server/capacity of queue/size of calling population/queueing pattern(LIFO, FIFO)<br>
 <h2>Operations</h2>
 <b>ENQUEUE</b>
   <pre>for fixed front 
@@ -121,5 +114,45 @@ Step 3: Otherwise, return False (Queue is not empty).
 Step 4: End
 </pre>
 <b>isFull</b>
-<pre>
-<b>display</b</pre>
+<pre> for fixed frontStep 1: Start
+Step 2: If (rear == capacity - 1), then return True (Queue is full).
+Step 3: Otherwise, return False.
+Step 4: End
+<hr>
+  for non fixed front
+  Step 1: Start
+Step 2: If (rear == capacity - 1), then return True (Queue is full).
+Step 3: Otherwise, return False.
+Step 4: End
+<hr>
+  circular queue
+  Step 1: Start
+Step 2: If ((rear + 1) % capacity == front), then return True (Queue is full).
+Step 3: Otherwise, return False.
+Step 4: End
+</pre>
+<b>DISPLAY</b>
+<pre> for fixed front 
+Step 1: Start
+Step 2: If (rear == -1), print "Queue is empty" and exit.
+Step 3: Loop for i from 0 to rear:
+            Print arr[i]
+Step 4: End
+<hr>
+for non fixed front
+Step 1: Start
+Step 2: If (front == -1), print "Queue is empty" and exit.
+Step 3: Loop for i from front to rear:
+            Print arr[i]
+Step 4: End
+<hr>
+circular queue
+Step 1: Start
+Step 2: If (front == -1), print "Queue is empty" and exit.
+Step 3: Set temporary pointer i = front.
+Step 4: Loop indefinitely:
+            a. Print arr[i]
+            b. If (i == rear), then break the loop (all items printed).
+            c. Move to next index: i = (i + 1) % capacity.
+Step 5: End
+</pre>
