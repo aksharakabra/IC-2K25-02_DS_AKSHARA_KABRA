@@ -6,7 +6,7 @@ According to DR SHALIGRAM PRAJAPAT sir, <br>
 <tr><td>initialization</td><td>top1=-1</td><td>top2=max</td></tr>
 <tr><td>empty</td><td>top1==-1</td><td>top2==max</td></tr>
 <tr><td>full</td><td>top1+1==top2</td><td>top2-1==top1</td></tr>
-<tr><td>push</td><td>top++ x=arr[top1]</td><td>top2-- x=arr[top2]</td></tr>
-<tr><td>pop</td><td>top--/td><td>top2++</td></tr>
+<tr><td>push</td><td>top++<br> x=arr[top1]</td><td>top2-- <br> x=arr[top2]</td></tr>
+<tr><td>pop</td><td>top--</td><td>top2++</td></tr>
 
 </table>
