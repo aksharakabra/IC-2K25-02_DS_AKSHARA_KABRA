@@ -5,5 +5,5 @@ According to DR SHALIGRAM PRAJAPAT sir, <br>
 <table><tr><th>OPERATION</th><th>STACK1</th><th>STACK2</th></tr>
 <tr><td>initialization</td><td>top1=-1</td><td>top2=max</td></tr>
 <tr><td>empty</td><td>top1==-1</td><td>top2==max</td></tr>
-
+<tr><td>full</td><td>top1+1==top2</td><td>top2-1==top1</td></tr>
 </table>
