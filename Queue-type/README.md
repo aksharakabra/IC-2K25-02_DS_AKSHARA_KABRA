@@ -84,6 +84,42 @@ Step 2: Check for Underflow.
 Step 3: Return or print the element at index 0 (element = arr[0]).
 Step 4: End
 <hr>
+  non fixed front
+  Step 1: Start
+Step 2: Check for Underflow.
+        If (front == -1), then print "Queue is empty / Underflow" and exit.
+Step 3: Return or print the element at the front index (element = arr[front]).
+Step 4: End
+<hr>
+  cicular queue
+  Step 1: Start
+Step 2: Check for Underflow.
+        If (front == -1), then print "Queue is empty / Underflow" and exit.
+Step 3: Return or print the element at the current front index (element = arr[front]).
+Step 4: End
+<hr></pre>
 <b>isEmpty</b>
+<pre> for fixed front
+  Step 1: Start
+Step 2: Check the rear index condition.
+        If (rear == -1), then return True (Queue is empty).
+Step 3: Otherwise, return False (Queue is not empty).
+Step 4: End
+<hr>
+  for non fixed front
+  Step 1: Start
+Step 2: Check the front index condition.
+        If (front == -1), then return True (Queue is empty).
+Step 3: Otherwise, return False (Queue is not empty).
+Step 4: End
+<hr>
+  for circular queue
+  Step 1: Start
+Step 2: Check the front index condition.
+        If (front == -1), then return True (Queue is empty).
+Step 3: Otherwise, return False (Queue is not empty).
+Step 4: End
+</pre>
 <b>isFull</b>
+<pre>
 <b>display</b</pre>
