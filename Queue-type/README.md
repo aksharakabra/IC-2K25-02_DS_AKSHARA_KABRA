@@ -15,3 +15,8 @@ pop(loop first)... for(int i=front+1; i<=rear;i++){arr[i-1]=arr[i]} and r-- or f
 peek front...arr[front]
 display(by loop)...   for (int i = front; i <= rear; i++) {arr[i]}
 </pre>
+<h2>Real life uses</h2>
+  <h3>for queue</h3>
+  <b>TICKET COUNTERS AND TRAFFIC AND COUSTMER CALL CENTER</b>
+  <h3>for circular queue</h3>
+<b>TRAFFIC LIGHT CONTROL AND STREAM AND AUDIO/VIDEO BUFFERING</b>
