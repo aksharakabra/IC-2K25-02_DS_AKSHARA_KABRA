@@ -21,3 +21,11 @@ display(by loop)... for(int i=0; i<=top1; i++){arr[i]}
 <tr><td>pop</td><td>top--</td><td>top2++</td></tr>
 <tr><td>display</td><td>for(int i=0; i<=top1; i++)<br>{cout<<arr[i]<<" ";}</td><td>for(int j=top2; j<capacity; j++)<br>{cout<<arr[j]<<" ";}</td></tr>
 </table>
+
+<h2>REAL LIFE USES</h2>
+<h3>single stack</h3>
+<b>UNDO/ REDO MECHANISMS IN TEXT EDITORS AND WEB BROWSER</b>
+<h3>double stack</h3>
+<b>ADVANCE UNDO AND REDO STATE ENGINES AND BROWSER NAVIGATION ARCHITECTURE(foraward and backward)</b>
+<h3>multi stack</h3>
+<b>MMPORPG(massive multiplayer online role playing games</b>
