@@ -8,6 +8,7 @@ IsEMPTY...top==-1
 IsFull...top==max-1
 push...arr[++top]=x
 pop...top--
+peek...arr[top]        
 display(by loop)... for(int i=0; i<=top1; i++){arr[i]}
 </pre>
         
