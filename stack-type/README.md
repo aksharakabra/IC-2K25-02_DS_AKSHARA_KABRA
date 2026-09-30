@@ -8,9 +8,9 @@ IsEMPTY...top==-1
 IsFull...top==max-1
 push...arr[++top]=x
 pop...top--
-display(by loop)... for(int i=0; i<=top1; i++){
-        cout<<arr[i]<<" ";}
+display(by loop)... for(int i=0; i<=top1; i++){arr[i]}
 </pre>
+        
 <h2>RIVISION FOR DOUBLE STACK</h2>
 <table><tr><th>OPERATION</th><th>STACK1</th><th>STACK2</th></tr>
 <tr><td>initialization</td><td>top1=-1</td><td>top2=max</td></tr>
